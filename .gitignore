@@ -3,6 +3,18 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+**/out/**
+**/.idea/**
+**/*.iml
+
+git rm --cached *.iml
+git rm -r --cached out/
+git rm -r --cached .idea/
+git add -A
+git commit -m "Odstraneny ignorovane soubory po aktualicazi .gitignore"
+git push
+
+
 ### Eclipse ###
 .apt_generated
 .classpath
